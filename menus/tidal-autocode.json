@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle tidal-autocode",
+        "command": "tidal-autocode:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "tidal-autocode",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "tidal-autocode:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
