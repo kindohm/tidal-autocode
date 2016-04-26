@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle tidal-autocode",
-        "command": "tidal-autocode:toggle"
+        "label": "Generate code",
+        "command": "tidal-autocode:generate"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "tidal-autocode",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "tidal-autocode:toggle"
+              "label": "Generate",
+              "command": "tidal-autocode:generate"
             }
           ]
         }

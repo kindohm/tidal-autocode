@@ -8,12 +8,14 @@
     "tidalcycles"
   ],
   "activationCommands": {
-    "atom-workspace": "tidal-autocode:toggle"
+    "atom-workspace": "tidal-autocode:generate"
   },
   "repository": "https://github.com/kindohm/tidal-autocode",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tracery-grammar": "2.7.2"
+  }
 }

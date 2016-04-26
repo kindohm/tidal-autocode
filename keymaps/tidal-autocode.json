@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "tidal-autocode:toggle"
+    "ctrl-alt-t": "tidal-autocode:generate"
   }
 }

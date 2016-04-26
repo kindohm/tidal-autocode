@@ -15,59 +15,11 @@ describe('TidalAutocode', () => {
     activationPromise = atom.packages.activatePackage('tidal-autocode');
   });
 
-  describe('when the tidal-autocode:toggle event is triggered', () => {
-    it('hides and shows the modal panel', () => {
-      // Before the activation event the view is not on the DOM, and no panel
-      // has been created
-      expect(workspaceElement.querySelector('.tidal-autocode')).not.toExist();
+  describe('when the tidal-autocode:generate event is triggered', () => {
 
-      // This is an activation event, triggering it will cause the package to be
-      // activated.
-      atom.commands.dispatch(workspaceElement, 'tidal-autocode:toggle');
-
-      waitsForPromise(() => {
-        return activationPromise;
-      });
-
-      runs(() => {
-        expect(workspaceElement.querySelector('.tidal-autocode')).toExist();
-
-        let tidalAutocodeElement = workspaceElement.querySelector('.tidal-autocode');
-        expect(tidalAutocodeElement).toExist();
-
-        let tidalAutocodePanel = atom.workspace.panelForItem(tidalAutocodeElement);
-        expect(tidalAutocodePanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'tidal-autocode:toggle');
-        expect(tidalAutocodePanel.isVisible()).toBe(false);
-      });
+    it('is a bad test', () => {
     });
 
-    it('hides and shows the view', () => {
-      // This test shows you an integration test testing at the view level.
-
-      // Attaching the workspaceElement to the DOM is required to allow the
-      // `toBeVisible()` matchers to work. Anything testing visibility or focus
-      // requires that the workspaceElement is on the DOM. Tests that attach the
-      // workspaceElement to the DOM are generally slower than those off DOM.
-      jasmine.attachToDOM(workspaceElement);
-
-      expect(workspaceElement.querySelector('.tidal-autocode')).not.toExist();
-
-      // This is an activation event, triggering it causes the package to be
-      // activated.
-      atom.commands.dispatch(workspaceElement, 'tidal-autocode:toggle');
-
-      waitsForPromise(() => {
-        return activationPromise;
-      });
-
-      runs(() => {
-        // Now we can test for view visibility
-        let tidalAutocodeElement = workspaceElement.querySelector('.tidal-autocode');
-        expect(tidalAutocodeElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'tidal-autocode:toggle');
-        expect(tidalAutocodeElement).not.toBeVisible();
-      });
-    });
   });
+
 });
