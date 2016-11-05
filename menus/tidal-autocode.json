@@ -4,6 +4,10 @@
       {
         "label": "Generate code",
         "command": "tidal-autocode:generate"
+      },
+      {
+        "label": "remix",
+        "command": "tidal-autocode:remix"
       }
     ]
   },
@@ -17,6 +21,10 @@
             {
               "label": "Generate",
               "command": "tidal-autocode:generate"
+            },
+            {
+              "label": "Remix",
+              "command": "tidal-autocode:remix"
             }
           ]
         }

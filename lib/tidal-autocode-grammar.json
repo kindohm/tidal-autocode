@@ -1,28 +1,52 @@
 {
-  "origin" : ["#pattern# |=| cut \"#cutint#\""],
+  "origin": ["c1 $ #pattern# |=| cut \"#cutint#\""],
   "pattern": ["#transformchain# #sound# #effectchain#"],
-  "sound" : ["(sound $ samples \"#samplenamepattern#\" (#timetransformchain##sampleindexpattern#))"],
-  "samplenamepattern": ["#samplenamepolymeterpattern#", "#single# #single# #single# #single#"],
-  "samplenameunlimited": ["#single#", "#single# #samplenameunlimited#", "#single# #samplenameunlimited#"],
+  "s": ["k", "s", "peri", "b", "b2", "cold", "akuma1", "sqr", "sq", "saw", "kv", "sea", "amenall2"],
+  "sound": [
+    "(sound $ samples \"#samplenamepattern#\" (#timetransformchain##sampleindexpattern#))"
+  ],
+  "samplenamepattern": ["#samplenamepolymeterpattern#",
+    "#single# #single# #single# #single#"
+  ],
+  "samplenameunlimited": ["#single#", "#single# #samplenameunlimited#",
+    "#single# #samplenameunlimited#"
+  ],
   "samplenamepolymeterpattern": ["{#samplenameunlimited#}%#polyint#"],
   "single": ["#s#", "#s##mult#", "#s##div#", "{#s# #s#}%#multpolyint#"],
   "sampleindexpattern": ["\"0\"", "run #runint#", "\"#sampleindexintpattern#\""],
   "conditional": ["every #everyint#", "whenmod #whenmodvals#"],
-  "timetransform": ["density #timeint#", "slow #timeint#", "(#shiftval# ~>)", "(#shiftval# <~)", "iter #iterint#", "rev", "palindrome"],
+  "timetransform": ["density #timeint#", "slow #timeint#", "(#shiftval# ~>)",
+    "(#shiftval# <~)", "iter #iterint#", "rev", "palindrome"
+  ],
   "conditionaltimetransform": ["#conditional# (#timetransform#)"],
-  "timetransformchain": ["#conditionaltimetransform# $ ", "#conditionaltimetransform# $ #timetransformchain#"],
+  "timetransformchain": ["#conditionaltimetransform# $ ",
+    "#conditionaltimetransform# $ #timetransformchain#"
+  ],
   "transform": ["#effect#", "chop #chopint#", "gap #gapint#"],
-  "conditionaltransform": ["#conditional# (#transform#)", "#conditionaltimetransform#"],
-  "transformchain": ["#conditionaltransform# $", "#conditionaltransform# $ #transformchain#"],
-  "effectchain" : ["#effect#", "#effect# #effectchain#"],
-  "effect" :["|=| gain \"1\"", "|=| gain \"1\"", "|=| accelerate \"#acceleratepat#\"", "|=| delay \"#delaypat#\"", "|=| up \"#uppat#\"", "|=| vowel \"#vowelpat#\"", "|=| coarse \"#coarsepat#\""],
+  "conditionaltransform": ["#conditional# (#transform#)",
+    "#conditionaltimetransform#"
+  ],
+  "transformchain": ["#conditionaltransform# $",
+    "#conditionaltransform# $ #transformchain#"
+  ],
+  "effectchain": ["#effect#", "#effect# #effectchain#"],
+  "effect": ["|=| gain \"1\"", "|=| gain \"1\"",
+    "|=| accelerate \"#acceleratepat#\"", "|=| delay \"#delaypat#\"",
+    "|=| up \"#uppat#\"", "|=| vowel \"#vowelpat#\"",
+    "|=| coarse \"#coarsepat#\""
+  ],
   "upval": ["0", "0", "0", "1", "-2", "-12", "12", "5", "7", "-5", "-7"],
-  "upvals" :["#upval#", "#upval# #upvals#"],
-  "uppat" :[ "#upvals#", "{#upvals#}%#polyint#"],
+  "upvals": ["#upval#", "#upval# #upvals#"],
+  "uppat": ["#upvals#", "{#upvals#}%#polyint#"],
   "speedval": ["1", "2", "1.5", "0.75", "1.25"],
-  "speedpat": ["#speedval#", "#speedval#", "#speedval#", "-#speedval#", "#speedval# #speedpat#", "#speedval# #speedpat#", "#speedval# #speedpat#", "-#speedval# #speedpat#"],
-  "speedwave": ["(scale (#speedval#) (#speedval#) $ #timetransform# $ #wavetype#)"],
-  "wavetype" : ["sine1", "saw1"],
+  "speedpat": ["#speedval#", "#speedval#", "#speedval#", "-#speedval#",
+    "#speedval# #speedpat#", "#speedval# #speedpat#", "#speedval# #speedpat#",
+    "-#speedval# #speedpat#"
+  ],
+  "speedwave": [
+    "(scale (#speedval#) (#speedval#) $ #timetransform# $ #wavetype#)"
+  ],
+  "wavetype": ["sine1", "saw1"],
   "delayval": ["0", "0.0625", "0.125", "0"],
   "delaypat": ["#delayval#", "#delayval# #delaypat#"],
   "vowelval": ["a", "o", "u", "i", "e"],
@@ -30,24 +54,34 @@
   "coarseval": ["2", "4", "8"],
   "coarsepat": ["#coarseval#", "#coarseval# #coarsepat#"],
   "accelerateval": ["0.25", "0.5", "1"],
-  "acceleratevals": ["#accelerateval#", "-#accelerateval#", "-#accelerateval# #acceleratevals#", "#accelerateval# #acceleratevals#"],
+  "acceleratevals": ["#accelerateval#", "-#accelerateval#",
+    "-#accelerateval# #acceleratevals#", "#accelerateval# #acceleratevals#"
+  ],
   "acceleratepat": ["#acceleratevals#", "{#acceleratevals#}%#polyint#"],
   "mult": ["*2", "*3"],
   "div": ["/2"],
-  "e" : ["(3,8)", "(5,8)"],
-  "s" : ["k", "~", "s", "cp", "saw", "sq", "sqr", "b2", "b", "ch", "sea", "oh", "peri", "nerd", "cpr", "kl", "drop", "vocad", "chee", "mlhit1", "mlhit2", "ml", "ml1", "ml2", "ml3", "ml4", "ml5", "ml6", "ml7", "ml8", "lessb", "gnome", "tite", "doru", "c64", "ow1", "ow2", "jxn", "kit1", "kit2", "kit3", "kit4", "kit5", "frozen", "cold"],
-  "whenmodvals": ["4 2", "5 2", "5 3", "6 2", "6 3", "6 4", "7 2", "7 3", "7 4", "7 5", "8 2", "8 3", "8 4", "8 5", "8 6"],
+  "e": ["(3,8)", "(5,8)"],
+  "whenmodvals": ["4 2", "5 2", "5 3", "6 2", "6 3", "6 4", "7 2", "7 3", "7 4",
+    "7 5", "8 2", "8 3", "8 4", "8 5", "8 6"
+  ],
   "iterint": ["4", "8"],
   "gapint": ["2", "4", "8", "16"],
   "chopint": ["2", "4", "8", "16"],
   "polyint": ["2", "4", "8"],
   "multpolyint": ["1", "2", "4"],
   "cutpat": ["#cutint#", "#cutint# #cutpat#"],
-  "cutint": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
-  "runint" : ["5", "10", "20", "30", "50"],
+  "cutint": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",
+    "13", "14", "15", "16"
+  ],
+  "runint": ["5", "10", "20", "30", "50"],
   "timeint": ["2", "4", "2", "4", "(4/3)"],
-  "shiftval" : ["0.25", "0.125", "0.5", "0.75"],
-  "sampleindexint" :["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
-  "sampleindexintpattern" :["#sampleindexint#", "#sampleindexint# #sampleindexintpattern#", "#sampleindexint# #sampleindexintpattern#"],
-  "everyint" :["2", "3", "4", "5", "6", "7", "8"]
+  "shiftval": ["0.25", "0.125", "0.5", "0.75"],
+  "sampleindexint": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+    "11", "12", "13", "14", "15", "16"
+  ],
+  "sampleindexintpattern": ["#sampleindexint#",
+    "#sampleindexint# #sampleindexintpattern#",
+    "#sampleindexint# #sampleindexintpattern#"
+  ],
+  "everyint": ["2", "3", "4", "5", "6", "7", "8"]
 }
