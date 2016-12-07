@@ -1,0 +1,13 @@
+{
+  "sound": ["slow 2 $ s \"#units#\""],
+  "samples":["k", "cp", "cpr", "peri", "kv", "b", "b2", "sea", "melt", "cave", "worm", "water", "kh", "kr", "ch"],
+  "units": ["#unit# #unit# #unit#", "#unit# #unit# #unit# #unit#"],
+  "unit": ["#samples#*#opint#", "#samples#*#opint#"],
+  "opint": ["1", "2", "3", "4", "5", "6"],
+  "soundindex": ["|=| n \"#indexpat#\""],
+  "indexpat": ["#indexpat# #index#", "#index#"],
+  "index": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+  "cut": ["|=| cut \"#cutpat#\"", "|=| cut \"#cutpat#\"", "|=| cut (irand #cutint#)"],
+  "cutpat": ["#cutint# #cutpat#", "#cutint#"],
+  "cutint": ["1", "2", "3", "4"]
+}

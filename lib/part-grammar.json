@@ -1,6 +1,6 @@
 {
   "origin": ["#transchain# s #patternwrap#"],
-  "patternwrap": ["\"#pattern#\" |=| n #indexwrap#","\"#pattern#\" |=| n #indexwrap#","\"#pattern#\" |=| n #indexwrap#","\"#pattern#\" |=| n #indexwrap#","\"#pattern#\" |=| n #indexwrap#", "\"#pattern#\" |=| n #indexwrap#", "#breakpat#"],
+  "patternwrap": ["\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#", "\"#pattern#\" \n|=| n #indexwrap#", "#breakpat#"],
   "pattern": ["#sample#", "#s##bjork#", "#sample# #sample#", "#sample# #sample# #sample# #sample#", "{#sample# #sample# #sample# #sample# #sample#}%4"],
   "sample": ["#s#", "#s##mult#"],
   "mult": ["*2", "/2", "/3", "/4"],

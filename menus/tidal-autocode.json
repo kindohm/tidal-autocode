@@ -2,12 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Generate code",
-        "command": "tidal-autocode:generate"
-      },
-      {
-        "label": "remix",
-        "command": "tidal-autocode:remix"
+        "label": "Start",
+        "command": "tidal-autocode:start"
       }
     ]
   },
@@ -19,13 +15,14 @@
           "label": "tidal-autocode",
           "submenu": [
             {
-              "label": "Generate",
-              "command": "tidal-autocode:generate"
+              "label": "Start",
+              "command": "tidal-autocode:start"
             },
             {
-              "label": "Remix",
-              "command": "tidal-autocode:remix"
+              "label": "Stop",
+              "command": "tidal-autocode:stop"
             }
+
           ]
         }
       ]

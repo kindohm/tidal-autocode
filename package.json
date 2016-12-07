@@ -9,8 +9,7 @@
   ],
   "activationCommands": {
     "atom-workspace": [
-      "tidal-autocode:generate",
-      "tidal-autocode:remix"
+      "tidal-autocode:start"
     ]
   },
   "repository": "https://github.com/kindohm/tidal-autocode",

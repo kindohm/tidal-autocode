@@ -1,6 +1,7 @@
 {
   "atom-workspace": {
-    "ctrl-alt-t": "tidal-autocode:generate",
-    "ctrl-alt-y": "tidal-autocode:remix"
+    "ctrl-alt-y": "tidal-autocode:start",
+    "ctrl-alt-u": "tidal-autocode:stop",
+    "ctrl-alt-i": "tidal-autocode:pause"
   }
 }
