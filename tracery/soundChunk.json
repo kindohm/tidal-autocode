@@ -1,7 +1,12 @@
 {
   "origin": ["slow 2 $ s \"#units#\""],
-  "samples":["k", "s", "b", "b2", "ow1", "ow3", "numbers", "cold", "ch", "kv", "sq", "sqr", "saw", "kl", "peri", "pson", "tite", "dr", "nose", "melt", "cave", "gab", "lessk", "lesss", "heaven", "doru", "c64", "vixbt", "vixbd", "gli1", "cp", "cpr", "dear", "scree", "teks", "scream1", "scream2", "kit1", "kit2", "kit3", "kit4", "kit5", "kit6", "kit7", "kit8", "kit9", "kit10", "kit11", "peach", "oh", "mi", "jxn", "kh", "alpkeys", "electrowave", "depthcore", "4stab", "4synth", "2stab", "calm", "cb", "ch", "d4", "laz", "frozen"],
+  "samples":["k", "s", "b", "b2", "ow1", "ow3", "numbers", "cold", "ch", "kv", "sq", "sqr", "saw", "kl", "peri", "pson", "tite",
+    "dr", "nose", "melt", "cave", "gab", "lessk", "lesss", "heaven", "doru", "c64", "vixbt", "vixbd", "gli1", "cp", "cpr", "dear",
+    "scree", "teks", "scream1", "scream2", "kit1", "kit2", "kit3", "kit4", "kit5", "kit6", "kit7", "kit8", "kit9", "kit10", "kit11",
+    "peach", "oh", "mi", "jxn", "kh", "alpkeys", "electrowave", "depthcore", "4stab", "4synth", "2stab", "cb", "ch", "d4", "laz", "frozen",
+    "009b2", "009m2", "pracpad", "ringpad", "vocad", "hopall", "hopkit", "hopgab", "ulk", "defkit1", "defkit2", "defdo", "defb",
+    "8k", "8s", "8cy", "4k", "4s", "4cy", "4cp", "r"],
   "units": ["#unit# #unit# #unit#", "#unit# #unit# #unit# #unit#"],
-  "unit": ["#samples#*#opint#", "#samples#*#opint#"],
+  "unit": ["#samples#*#opint#"],
   "opint": ["1", "2", "3", "4", "5", "6"]
 }
