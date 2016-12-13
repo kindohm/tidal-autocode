@@ -1,7 +1,7 @@
 {
   "name": "tidal-autocode",
   "main": "./lib/tidal-autocode",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "Automatically generates TidalCycles patterns.",
   "keywords": [
     "tidal",
