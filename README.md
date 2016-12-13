@@ -11,6 +11,11 @@ In the package config, enter a comma-separated list of samples to use:
 `bd, sd, drum, arpy, awesome, awful, bass, hoover`
 
 ### Start and stop
+
+- start: `ctrl-alt-y`
+- stop: `ctrl-alt-u`
+- pause: `ctrl-alt-i`
+
 Create a new file with a `.tidal` extension. Start the auto-coder with `ctrl-alt-y`.
 The auto-coder will start up TidalCycles and generate code automatically in
 your editor. You are now hands-free!
