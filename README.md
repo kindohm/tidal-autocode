@@ -3,6 +3,8 @@
 Auto-generates sound patterns for the
 [TidalCycles livecoding environment](http://tidalcycles.org).
 
+Brief demo: [youtube.com/watch?v=wSqE23WgwYE](https://www.youtube.com/watch?v=wSqE23WgwYE).
+
 ## How to use
 
 ### Configure samples
