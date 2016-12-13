@@ -5,38 +5,55 @@ Auto-generates sound patterns for the
 
 ## How to use
 
-- Specify a comma-separated list of samples to use in the package config:
+### Configure samples
+In the package config, enter a comma-separated list of samples to use:
 
 `bd, sd, drum, arpy, awesome, awful, bass, hoover`
 
-- Start the auto-coder with `ctrl-alt-y` (`cmd-alt-y` on Mac)
+### Start and stop
+Create a new file with a `.tidal` extension. Start the auto-coder with `ctrl-alt-y`.
+The auto-coder will start up TidalCycles and generate code automatically in
+your editor. You are now hands-free!
 
-- Stop the auto-coder with `ctrl-alt-u` (`cmd-alt-y` on Mac)
+Stop the auto-coder with `ctrl-alt-u`. This will stop code generation **and**
+hush all sounds.
 
-- Experimental Pause feature: `ctrl-alt-i` (`cmd-alt-i` on Mac)
+Experimental Pause feature: `ctrl-alt-i`. This will pause the code generation,
+but Tidal and Dirt will keep playing. Re-start code generation with the *start*
+command `ctrl-alt-y`.
+
+### Use SuperDirt or Classic Dirt
+Find the "Dirt Prefix" config setting, and enter `d` for SuperDirt or `c` for
+Classic Dirt.
+
+## Informative messages
+
+Interesting information about what the auto-coder is doing can be found in
+the Atom console output. You can view this output by enabling the developer
+tools with the Toggle Developer Tools command `ctrl-shift-i`, then click
+the Console tab.
 
 ## FAQ
-
 **Can the code history be saved?**
-No, not yet. In experimental builds, new code generations were appended and the
-history was maintained. However, the file gets ridiculously long and Atom starts
-to run out of memory.
+
+No, not yet. In experimental builds, new code was appended and the
+history was maintained. However, the file gets ridiculously long and Atom gets
+mad.
 
 **Can I use my own samples?**
+
 Yes, see instructions above.
 
 **Can I use Dirt or SuperDirt?**
-By default it is using classic Dirt with `c1`. This will be configurable in the
-future.
 
-There is no support for SuperDirt
-yet, but if you really want to you can modify the source code. View the package
-code in atom, and find this bit of code in `conductor.js`:
+See instructions above on configuring for either.
 
-`partTexts += '\n   c' + (i+1).toString() + ' $ \n      ' + parts[i].getText();`
+**Can I use Tidal-MIDI?**
 
-and change the `c` character to `d`:
+Not yet.
 
-`partTexts += '\n   d' + (i+1).toString() + ' $ \n      ' + parts[i].getText();`
+**Can I modify the templates used to generate code?**
 
-Save, then restart Atom. Then it will work with SuperDirt.
+Not yet. Everything is in Tracery JSON files, but you can't specify your own
+files (yet). If you are ambitious, you can modify the JSON files in the `tracery/`
+folder, restart Atom, and see what happens.
