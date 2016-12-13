@@ -1,4 +1,4 @@
-# tidal-autocode package for Atom
+# TidalCycles Auto-Coder
 
 Auto-generates sound patterns for the
 [TidalCycles livecoding environment](http://tidalcycles.org).
