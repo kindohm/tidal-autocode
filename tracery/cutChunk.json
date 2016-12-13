@@ -1,5 +1,5 @@
 {
-    "origin": ["|=| cut \"#cutpat#\"", "|=| cut \"#cutpat#\"", ""],
+    "origin": ["|=| cut \"#cutpat#\"", "|=| cut \"#cutpat#\"", "|=| cut \"-1\""],
     "cutpat": ["#cutint# #cutpat#", "#cutint# #cutpat#", "#cutint# #cutpat#", "#cutint#"],
-    "cutint": ["1", "2", "3", "4"]
+    "cutint": ["1", "2", "3", "4", "-1"]
 }
