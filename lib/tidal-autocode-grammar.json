@@ -1,5 +1,6 @@
 {
-  "origin": ["c1 $ #pattern# |=| cut \"#cutint#\""],
+  "origin": ["c1 $ #pattern# #operator# cut \"#cutint#\""],
+  "operator": [">|"],
   "pattern": ["#transformchain# #sound# #effectchain#"],
   "s": ["k", "s", "peri", "b", "b2", "cold", "akuma1", "sqr", "sq", "saw", "kv", "sea", "amenall2"],
   "sound": [
@@ -30,10 +31,10 @@
     "#conditionaltransform# $ #transformchain#"
   ],
   "effectchain": ["#effect#", "#effect# #effectchain#"],
-  "effect": ["|=| gain \"1\"", "|=| gain \"1\"",
-    "|=| accelerate \"#acceleratepat#\"", "|=| delay \"#delaypat#\"",
-    "|=| up \"#uppat#\"", "|=| vowel \"#vowelpat#\"",
-    "|=| coarse \"#coarsepat#\""
+  "effect": ["#operator# gain \"1\"", "#operator# gain \"1\"",
+    "#operator# accelerate \"#acceleratepat#\"", "#operator# delay \"#delaypat#\"",
+    "#operator# up \"#uppat#\"", "#operator# vowel \"#vowelpat#\"",
+    "#operator# coarse \"#coarsepat#\""
   ],
   "upval": ["0", "0", "0", "1", "-2", "-12", "12", "5", "7", "-5", "-7"],
   "upvals": ["#upval#", "#upval# #upvals#"],

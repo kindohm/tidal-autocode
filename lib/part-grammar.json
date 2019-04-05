@@ -1,6 +1,7 @@
 {
   "origin": ["#transchain# s #patternwrap#"],
-  "patternwrap": ["\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#","\"#pattern#\" \n|=| n #indexwrap#", "\"#pattern#\" \n|=| n #indexwrap#", "#breakpat#"],
+  "operator": [">|"],
+  "patternwrap": ["\"#pattern#\" \n#operator# n #indexwrap#","\"#pattern#\" \n#operator# n #indexwrap#","\"#pattern#\" \n#operator# n #indexwrap#","\"#pattern#\" \n#operator# n #indexwrap#","\"#pattern#\" \n#operator# n #indexwrap#", "\"#pattern#\" \n#operator# n #indexwrap#", "#breakpat#"],
   "pattern": ["#sample#", "#s##bjork#", "#sample# #sample#", "#sample# #sample# #sample# #sample#", "{#sample# #sample# #sample# #sample# #sample#}%4"],
   "sample": ["#s#", "#s##mult#"],
   "mult": ["*2", "/2", "/3", "/4"],
@@ -13,7 +14,7 @@
   "indexrun": ["4", "8", "12", "16"],
   "index": ["0", "1", "2", "3", "4", "5", "6"],
   "s": ["~", "~", "~", "~", "~", "k", "s", "b", "b2", "ow1", "ow3", "numbers", "cold", "ch", "kv", "sq", "sqr", "saw", "kl", "peri", "pson", "tite", "dr", "nose", "melt", "cave", "gab", "lessk", "lesss", "heaven", "doru", "c64", "vixbt", "vixbd", "gli1", "cp", "cpr", "dear", "scree", "teks", "scream1", "scream2", "kit1", "kit2", "kit3", "kit4", "kit5", "kit6", "kit7", "kit8", "kit9", "kit10", "kit11", "peach", "oh", "mi", "jxn", "kh", "alpkeys", "electrowave", "depthcore", "4stab", "4synth", "2stab", "calm", "cb", "ch", "d4", "laz", "frozen"],
-  "trans": ["trunc #truncval#","iter #iterval#", "(|=| speed \"#speedval#\")", "(0.125 ~>)", "(0.25 <~)", "(0.125 <~)", "(0.125 ~>)", "(0.25 <~)", "(0.125 <~)", "slow 2", "density 2", "density 4", "slow 4", "rev", "palindrome", "chop #chopint#", "degrade", "(|=| vowel \"a o u\")", "(|=| up \"#upint# #upint#\")", "(|=| up \"#upint# #upint# #upint# #upint#\")", "(|=| coarse \"#coarseint# #coarseint#\")", "(|=| accelerate \"#accelerateval# #accelerateval#\")", "#stut#", "jux (#trans#)", "((|=| delay \"#delayval#\") . (|=| delaytime \"#delaytimeval#\") . (|=| delayfeedback \"#delayfeedbackval#\"))"],
+  "trans": ["trunc #truncval#","iter #iterval#", "(#operator# speed \"#speedval#\")", "(0.125 ~>)", "(0.25 <~)", "(0.125 <~)", "(0.125 ~>)", "(0.25 <~)", "(0.125 <~)", "slow 2", "density 2", "density 4", "slow 4", "rev", "palindrome", "chop #chopint#", "degrade", "(#operator# vowel \"a o u\")", "(#operator# up \"#upint# #upint#\")", "(#operator# up \"#upint# #upint# #upint# #upint#\")", "(#operator# coarse \"#coarseint# #coarseint#\")", "(#operator# accelerate \"#accelerateval# #accelerateval#\")", "#stut#", "jux (#trans#)", "((#operator# delay \"#delayval#\") . (#operator# delaytime \"#delaytimeval#\") . (#operator# delayfeedback \"#delayfeedbackval#\"))"],
   "truncval": ["0.25", "0.25", "0.5", "0.5", "0.75"],
   "delayval": ["0.3", "0.5", "0.7"],
   "delaytimeval": ["0.05", "0.01", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6"],
@@ -33,6 +34,6 @@
   "stutfunc": ["(|*| gain \"0.9\")", "(|*| speed \"1.25\")"],
   "stutnum1": ["2", "4", "8", "16"],
   "stutnum2": ["0.25", "0.5", "0.125", "0.0625"],
-  "breakpat": ["\"#breaksamples#*8?\" |=| n (run 16) |=| unit \"c\" |=| speed \"8\""],
+  "breakpat": ["\"#breaksamples#*8?\" #operator# n (run 16) #operator# unit \"c\" #operator# speed \"8\""],
   "breaksamples": ["akuma1", "akuma2", "amenall2", "fur1", "fur2", "brk1", "brk2", "jung1", "jung4"]
 }
